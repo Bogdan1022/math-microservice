@@ -1,0 +1,4 @@
+2025-08-05 17:26:23,852 [INFO] BEGIN (implicit)
+2025-08-05 17:26:23,852 [INFO] PRAGMA main.table_info("requests")
+2025-08-05 17:26:23,852 [INFO] [raw sql] ()
+2025-08-05 17:26:23,854 [INFO] COMMIT
