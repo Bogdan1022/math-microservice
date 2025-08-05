@@ -22,8 +22,8 @@ async def get_db():
 @router.get("/health", tags=["System"], summary="Health check for API and DB")
 async def health_check(db: AsyncSession = Depends(get_db)):
     try:
-        await db.execute(text("SELECT 1"))  # ✅ wrap SQL in text()
-        return {"status": "ok", "message": "Service is healthy ✅"}
+        await db.execute(text("SELECT 1")) 
+        return {"status": "ok", "message": "Service is healthy "}
     except SQLAlchemyError as e:
         return JSONResponse(
             status_code=500,
