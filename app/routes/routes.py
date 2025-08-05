@@ -23,7 +23,7 @@ async def get_db():
 async def health_check(db: AsyncSession = Depends(get_db)):
     try:
         await db.execute(text("SELECT 1")) 
-        return {"status": "ok", "message": "Service is healthy "}
+        return {"status": "ok", "message": "Service is healthy"}
     except SQLAlchemyError as e:
         return JSONResponse(
             status_code=500,
