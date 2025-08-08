@@ -1,3 +1,27 @@
 # Math Microservice
+# Cotta Bogdan - Nicolae
+This project is a production-ready, containerized microservice developed with FastAPI. It exposes a RESTful API for executing basic mathematical operations — including exponentiation, factorial calculation, and Fibonacci sequence generation — and persists request logs in a local SQLite database.
 
-A FastAPI-based microservice for math operations (`pow`, `fibonacci`, `factorial`) with DB persistence.
+---
+
+## Features
+
+- FastAPI-based REST API
+- Asynchronous SQLite database access using SQLAlchemy and aiosqlite
+- Request logging with timestamp and operation tracking
+- Health check endpoint for infrastructure readiness probes
+- Dockerized for portable deployment
+- MVC(S) architecture for clean separation of concerns
+
+---
+
+## Technologies Used
+
+- Python 3.11
+- FastAPI
+- Uvicorn (ASGI server)
+- SQLAlchemy + aiosqlite
+- Pydantic
+- Docker
+
+---
